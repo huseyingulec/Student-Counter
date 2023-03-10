@@ -1,6 +1,6 @@
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
-let totalEL = document.getElementById("total")
+
 let count = 0
 let total = 0
 
@@ -18,15 +18,16 @@ function decrement() {
     total -= 1
 }}
 
+let totalEL = document.getElementById("total")
 
-consol
 function save() {
+    if (count >= 1) {
     let countStr = count + " - "
     saveEl.textContent += countStr
     countEl.textContent = 0 
     count = 0
     totalEL.textContent = "TOTAL: " + total
-}
+}}
 
 
 function reset() {
@@ -35,5 +36,4 @@ function reset() {
     totalEL.textContent = "TOTAL: "
     total = 0
     count = 0
-    }     
-    }
+    }}

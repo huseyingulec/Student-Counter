@@ -1,6 +1,6 @@
 # Student counter webapp
 
-## Live-demo -> 
+## Live-demo -> https://student-count.netlify.app/
 
 In this mini project, I have learnt fundamentals of Javascript. 
 
