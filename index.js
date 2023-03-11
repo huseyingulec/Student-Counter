@@ -31,10 +31,11 @@ function save() {
 
 
 function reset() {
+    if ((count > 0) || (total > 0)) {
     if (window.confirm("Do you really want to reset?")) {
     saveEl.textContent = "Previous entries: "  
     totalEL.textContent = "TOTAL: "
     countEl.textContent = 0
     total = 0
     count = 0
-    }}
+    }}}
